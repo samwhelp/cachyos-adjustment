@@ -24,6 +24,7 @@
 | --- |
 | [bash](https://archlinux.org/packages/core/x86_64/bash/) |
 | [bash-completion](https://archlinux.org/packages/extra/any/bash-completion/) |
+| [fzf](https://archlinux.org/packages/extra/x86_64/fzf/) |
 
 
 
