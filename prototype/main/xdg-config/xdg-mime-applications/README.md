@@ -12,7 +12,7 @@
 ## Config File Path
 
 | Config File Path |
-| --- |
+| ---------------- |
 | [~/.config/mimeapps.list](./asset/overlay/etc/skel/.config/mimeapps.list) |
 
 
@@ -21,7 +21,7 @@
 ## Arch Package
 
 | Arch Package |
-| --- |
+| ------------ |
 | [xdg-utils](https://archlinux.org/packages/extra/any/xdg-utils/) |
 | [xdg-user-dirs](https://archlinux.org/packages/extra/x86_64/xdg-user-dirs/) |
 
