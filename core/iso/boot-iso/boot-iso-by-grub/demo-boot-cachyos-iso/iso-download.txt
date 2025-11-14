@@ -1,4 +1,8 @@
 https://cdn77.cachyos.org/ISO/desktop/250828/cachyos-desktop-linux-250828.iso
+https://cdn77.cachyos.org/ISO/handheld/250824/cachyos-handheld-linux-250824.iso
 
 https://cdn77.cachyos.org/ISO/desktop/250828/cachyos-desktop-linux-250828.iso.sha256
 https://cdn77.cachyos.org/ISO/desktop/250828/cachyos-desktop-linux-250828.iso.sig
+
+https://cdn77.cachyos.org/ISO/handheld/250824/cachyos-handheld-linux-250824.iso.sha256
+https://cdn77.cachyos.org/ISO/handheld/250824/cachyos-handheld-linux-250824.iso.sig
