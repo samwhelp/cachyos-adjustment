@@ -19,6 +19,7 @@
 
 * [CachyOS Respin](#cachyos-respin)
 * [Script](#script)
+* [Link](#link)
 
 
 
@@ -38,3 +39,20 @@
 | ------ |
 | [CachyOS Config](https://github.com/samwhelp/cachyos-adjustment/tree/main/prototype/main) |
 | [Tool Config](https://github.com/samwhelp/cachyos-adjustment/tree/main/prototype/main/tool-config/part) |
+
+
+
+
+## Link
+
+| Link | GitHub |
+| ---- | ------ |
+| [Archlinux Adjustment](https://samwhelp.github.io/archlinux-adjustment/) | [GitHub](https://github.com/samwhelp/archlinux-adjustment) |
+| [EndeavourOS Adjustment](https://samwhelp.github.io/endeavouros-adjustment/) | [GitHub](https://github.com/samwhelp/endeavouros-adjustment) |
+
+
+
+
+## Samwhelp
+
+* [GitHub](https://github.com/samwhelp)
