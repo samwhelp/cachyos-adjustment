@@ -32,6 +32,6 @@ menuentry "CachyOS ISO / Handheld Edition" --class archlinux {
 	set boot_option=""
 	#set boot_option="quiet splash"
 	set boot_option="cow_spacesize=10G copytoram=auto module_blacklist=pcspkr i915.modeset=1 amdgpu.modeset=1"
-	linux (loop)/arch/boot/x86_64/vmlinuz-linux-cachyos-lts img_dev=UUID=$iso_partition_uuid img_loop=$iso_file archisobasedir=arch $boot_option
-	initrd (loop)/arch/boot/x86_64/initramfs-linux-cachyos-lts.img
+	linux (loop)/arch/boot/x86_64/vmlinuz-linux-cachyos-deckify img_dev=UUID=$iso_partition_uuid img_loop=$iso_file archisobasedir=arch $boot_option
+	initrd (loop)/arch/boot/x86_64/initramfs-linux-cachyos-deckify.img
 }
