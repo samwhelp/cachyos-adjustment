@@ -15,9 +15,9 @@ menuentry "CachyOS ISO / Desktop" --class archlinux {
 	loopback loop ($iso_partition)$iso_file
 	set boot_option=""
 	#set boot_option="quiet splash"
-	set boot_option="archisobasedir=arch archisosearchuuid=2025-02-02-13-11-17-00 cow_spacesize=10G copytoram=auto module_blacklist=nvidia,nvidia_modeset,nvidia_uvm,nvidia_drm,pcspkr nouveau.modeset=1 i915.modeset=1 amdgpu.modeset=1 nvme_load=yes"
-	linux (loop)/arch/boot/x86_64/vmlinuz-linux-cachyos img_dev=$img_dev img_loop=$iso_file $boot_option
-	initrd (loop)/arch/boot/x86_64/initramfs-linux-cachyos.img
+	set boot_option="cow_spacesize=10G copytoram=auto module_blacklist=pcspkr i915.modeset=1 amdgpu.modeset=1"
+	linux (loop)/arch/boot/x86_64/vmlinuz-linux-cachyos-lts img_dev=UUID=$iso_partition_uuid img_loop=$iso_file archisobasedir=arch $boot_option
+	initrd (loop)/arch/boot/x86_64/initramfs-linux-cachyos-lts.img
 }
 
 
