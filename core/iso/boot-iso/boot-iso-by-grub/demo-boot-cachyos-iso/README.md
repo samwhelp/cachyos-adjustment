@@ -10,7 +10,7 @@
 | Account  | Value  |
 | -------- | ------ |
 | Username | `liveuser` |
-| Password | `` |
+| Password |  |
 
 
 run to change password
