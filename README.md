@@ -44,7 +44,7 @@
 | ---- | ------ |
 | [Archlinux Adjustment](https://samwhelp.github.io/archlinux-adjustment/) | [GitHub](https://github.com/samwhelp/archlinux-adjustment) |
 | [EndeavourOS Adjustment](https://samwhelp.github.io/endeavouros-adjustment/) | [GitHub](https://github.com/samwhelp/endeavouros-adjustment) |
-| [Manjaro Kde Plasma Adjustment](https://samwhelp.github.io/manjaro-kde-plasma-adjustment/) | [GitHub](https://github.com/samwhelp/manjaro-kde-plasma-adjustment) |
+| [Manjaro Adjustment](https://samwhelp.github.io/manjaro--adjustment/) | [GitHub](https://github.com/samwhelp/manjaro-adjustment) |
 
 
 
