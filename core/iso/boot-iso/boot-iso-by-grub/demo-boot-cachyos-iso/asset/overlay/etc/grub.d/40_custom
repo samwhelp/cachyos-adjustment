@@ -8,30 +8,50 @@ exec tail -n +3 $0
 
 
 menuentry "CachyOS ISO / Desktop Edition" --class archlinux {
+
 	set iso_file="/opt/iso/cachyos/latest/cachyos-desktop.iso"
-	search --set=iso_partition --no-floppy --file $iso_file
-	probe --set=iso_partition_uuid --fs-uuid $iso_partition
-	set img_dev="/dev/disk/by-uuid/$iso_partition_uuid"
-	loopback loop ($iso_partition)$iso_file
-	set boot_option=""
+
+	search --set=iso_partition --no-floppy --file ${iso_file}
+	probe --set=iso_partition_uuid --fs-uuid ${iso_partition}
+	#set img_dev="/dev/disk/by-uuid/${iso_partition_uuid}"
+	set img_dev="UUID=${iso_partition_uuid}"
+
+
+	loopback loop (${iso_partition})${iso_file}
+
+
+	#set boot_option=""
 	#set boot_option="quiet splash"
 	set boot_option="cow_spacesize=10G copytoram=auto module_blacklist=pcspkr i915.modeset=1 amdgpu.modeset=1"
-	linux (loop)/arch/boot/x86_64/vmlinuz-linux-cachyos-lts img_dev=UUID=$iso_partition_uuid img_loop=$iso_file archisobasedir=arch $boot_option
+
+
+	linux (loop)/arch/boot/x86_64/vmlinuz-linux-cachyos-lts img_dev=${img_dev} img_loop=${iso_file} archisobasedir=arch ${boot_option}
 	initrd (loop)/arch/boot/x86_64/initramfs-linux-cachyos-lts.img
+
 }
 
 
 
 
 menuentry "CachyOS ISO / Handheld Edition" --class archlinux {
+
 	set iso_file="/opt/iso/cachyos/latest/cachyos-handheld.iso"
-	search --set=iso_partition --no-floppy --file $iso_file
-	probe --set=iso_partition_uuid --fs-uuid $iso_partition
-	set img_dev="/dev/disk/by-uuid/$iso_partition_uuid"
-	loopback loop ($iso_partition)$iso_file
+
+	search --set=iso_partition --no-floppy --file ${iso_file}
+	probe --set=iso_partition_uuid --fs-uuid ${iso_partition}
+	#set img_dev="/dev/disk/by-uuid/${iso_partition_uuid}"
+	set img_dev="UUID=${iso_partition_uuid}"
+
+
+	loopback loop (${iso_partition})${iso_file}
+
+
 	set boot_option=""
 	#set boot_option="quiet splash"
 	set boot_option="cow_spacesize=10G copytoram=auto module_blacklist=pcspkr i915.modeset=1 amdgpu.modeset=1"
-	linux (loop)/arch/boot/x86_64/vmlinuz-linux-cachyos-deckify img_dev=UUID=$iso_partition_uuid img_loop=$iso_file archisobasedir=arch $boot_option
+
+
+	linux (loop)/arch/boot/x86_64/vmlinuz-linux-cachyos-deckify img_dev=${img_dev} img_loop=${iso_file} archisobasedir=arch ${boot_option}
 	initrd (loop)/arch/boot/x86_64/initramfs-linux-cachyos-deckify.img
+
 }
